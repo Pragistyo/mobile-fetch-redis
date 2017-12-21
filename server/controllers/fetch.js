@@ -12,7 +12,8 @@ client.on('connect', (err)=>{
 });
 
 const http = axios.create({
-    baseURL: 'http://35.197.157.222'
+    baseURL: 'http://35.197.157.222',
+    timeout: 1000,
 })
 
 
@@ -28,7 +29,8 @@ class TracktiveTest {
                if (err)  console.log(err)
                if (reply) {
                 dataFetched = JSON.parse(reply)
-                client.expire('fetchData', 10)
+                // you can defined when redis will be expired
+                client.expire('fetchData', 10) // redis expired in 10 sec,
                 console.log('from redis')
                 dataFetched.source = 'REDIS CACHE'
                 res.send(dataFetched)
@@ -43,7 +45,6 @@ class TracktiveTest {
         } catch (err) {
             res.send(err)
         }
-        
     }
 
 }
