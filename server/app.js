@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 app.use('/', fetch)
 
-app.listen(process.env.PORT || 3000, (err)=>{
+app.listen(process.env.PORT || 4200, (err)=>{
     if (err) console.log(err)
     console.log('PORT 3000 FOR SERVER DEV !')
 })

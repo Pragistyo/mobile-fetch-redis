@@ -16,3 +16,5 @@
  To running server locally, go to **server** directory, and then: 
 
     nodemon app.js
+
+ To 
