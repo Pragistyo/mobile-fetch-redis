@@ -17,4 +17,13 @@
 
     nodemon app.js
 
- To 
+ To running client, go to **client** directory, and then: 
+    prepare android emulator on computer (genymotion or android studio)
+    opne android emulator
+    from terminal, type: *yarn start*
+    after QR code showed, press *a*
+    
+
+
+
+

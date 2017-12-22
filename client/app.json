@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "tracktive-test",
+    "icon": "./assets/logo.png",
+    "version": "1.0.0",
+    "slug": "tractive-test",
+    "sdkVersion": "23.0.0",
+    "android": {
+      "package": "com.yourcompany.yourappname"
+    }
+  }
+}
