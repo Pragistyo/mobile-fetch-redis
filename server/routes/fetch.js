@@ -3,7 +3,7 @@ const router = express.Router()
 
 const testControllers = require('../controllers/fetch')
 
-router.get('/tractive-test', testControllers.fetchAll)
+router.get('/', testControllers.fetchAll)
 
 
 module.exports = router

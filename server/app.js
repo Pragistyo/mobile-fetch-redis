@@ -11,9 +11,11 @@ const fetch = require('./routes/fetch')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 
-app.use('/', fetch)
+app.use('/tractive-test', fetch)
 
 app.listen(process.env.PORT || 4200, (err)=>{
     if (err) console.log(err)
     console.log('PORT 3000 FOR SERVER DEV !')
 })
+
+module.exports = app
